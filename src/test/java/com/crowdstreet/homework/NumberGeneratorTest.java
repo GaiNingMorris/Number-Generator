@@ -12,6 +12,7 @@ import org.junit.Test;
 import com.crowdstreet.homework.model.RandomNumber;
 import com.crowdstreet.homework.service.NumberGenerator;
 
+
 public class NumberGeneratorTest {
 
 	// the total count of the random numbers
@@ -69,7 +70,7 @@ public class NumberGeneratorTest {
 	public void testIsRepeat() {
 		for (int i = 0; i < arr.length - 1; i++) {
 			if (arr[i] == arr[i + 1]) {
-				fail();
+				fail("consecutive numbers repeat");
 			}
 		}
 	}
@@ -81,7 +82,7 @@ public class NumberGeneratorTest {
 	public void testIsValidNumbers() {
 		for (int i = 0; i < arr.length - 1; i++) {
 			if (arr[i] < 1 || arr[i] > 20) {
-				fail();
+				fail("numbers are invalid");
 			}
 		}
 	}
@@ -144,7 +145,7 @@ public class NumberGeneratorTest {
 			|| count7 != MORE_FREQUENT_COUNT || count8 != MORE_FREQUENT_COUNT
 			|| count9 != MORE_FREQUENT_COUNT || count10 != MORE_FREQUENT_COUNT
 			|| count11 != MORE_FREQUENT_COUNT || count12 != MORE_FREQUENT_COUNT)
-			fail();
+			fail("the more frequent numbers` count are wrong");
 	}
 
 	/**
@@ -190,6 +191,6 @@ public class NumberGeneratorTest {
 				|| count3 != 250 || count4 != 100
 				|| count5 != 50 || count6 != 25
 				|| count7 != 10 || count8 != 5)
-				fail();
+				fail("the less frequent numbers` count are wrong");
 	}
 }
