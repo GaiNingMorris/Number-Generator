@@ -6,8 +6,7 @@ import java.util.List;
 
 import com.crowdstreet.homework.model.RandomNumber;
 import com.crowdstreet.homework.service.NumberGenerator;
-
-import utils.Helper;
+import com.crowdstreet.homework.util.Helper;
 
 /**
  * Main class

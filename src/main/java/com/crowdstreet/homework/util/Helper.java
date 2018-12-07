@@ -1,4 +1,4 @@
-package utils;
+package com.crowdstreet.homework.util;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

@@ -3,8 +3,7 @@ package com.crowdstreet.homework.service;
 import java.util.List;
 
 import com.crowdstreet.homework.model.RandomNumber;
-
-import utils.Helper;
+import com.crowdstreet.homework.util.Helper;
 
 /**
  * generate less frequent numbers

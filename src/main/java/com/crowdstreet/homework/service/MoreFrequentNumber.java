@@ -2,7 +2,7 @@ package com.crowdstreet.homework.service;
 
 import java.util.List;
 
-import utils.Helper;
+import com.crowdstreet.homework.util.Helper;
 
 /**
  * generate more frequent numbers
